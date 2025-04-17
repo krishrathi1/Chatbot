@@ -1,0 +1,125 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: none; /* Remove the background color */
+  }
+  
+  /* Container Styling */
+  .container {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  /* Heading Styling */
+  h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 255, 0.3);
+    animation: glow 1.5s ease-in-out infinite alternate;
+  }
+  
+  /* Typing Animation */
+  @keyframes glow {
+    0% {
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 255, 0.3);
+    }
+    100% {
+      text-shadow: 0 0 25px rgba(255, 255, 255, 0.9), 0 0 35px rgba(255, 255, 255, 0.4);
+    }
+  }
+  
+  /* Input Box */
+  #userInput {
+    background-color: #333;
+    border: 2px solid #aaa;
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    color: white;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+    transition: 0.3s;
+  }
+  
+  #userInput:focus {
+    outline: none;
+    border-color: #00ffcc;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 1);
+  }
+  
+  /* Button Styling */
+  button {
+    background-color: #00ffcc;
+    color: #333;
+    font-size: 1.2em;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 255, 255, 0.4);
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background-color: #00b3a6;
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px rgba(0, 255, 255, 0.6);
+  }
+  
+  /* Response Section */
+  #response {
+    margin-top: 20px;
+    padding: 15px;
+    min-height: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+    color: #fff;
+    font-size: 1.1em;
+    white-space: pre-line;
+    text-align: left;
+  }
+  
+  #response h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .typing-animation {
+    display: inline-block;
+    border-right: 4px solid #00ffcc;
+    padding-right: 5px;
+    animation: typing 1.5s infinite steps(30, end);
+  }
+  
+  @keyframes typing {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 100%;
+    }
+    100% {
+      width: 0;
+    }
+  }
+  
